@@ -1,0 +1,160 @@
+.download-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.download-button a {
+  text-decoration: none;
+}
+
+.download-button button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  /* transition: padding 0.3s ease; */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 14px; 
+  overflow: hidden; 
+  background: none; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, padding 0.3s ease;
+
+}
+
+.download-button.long button {
+  padding: 10px 20px;
+}
+
+.download-button.short button {
+  padding: 10px;
+}
+
+.download-button button .caption {
+  margin-left: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: max-width 0.3s ease, opacity 0.3s ease;
+  max-width: 200px;
+  opacity: 1;
+  position: relative;
+  z-index: 2;
+  height: 32px;
+  display: flex;
+  flex-direction: revert;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-button.short button .caption {
+  max-width: 0;
+  opacity: 0;
+}
+
+.download-button button svg {
+  position: relative;
+  z-index: 2; 
+}
+
+.download-button button:focus {
+  outline: none;
+}
+
+.download-button button .bg {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  z-index: 1;
+  background: rgba(23, 27, 30, 0.84);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  overflow: hidden;
+  border-radius: 12px;
+  outline: 1px solid #3d5d6e5c;
+}
+
+.download-button button .blob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 245px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #3d5d6e;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 4s infinite ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  20% {
+    transform: translate(-100%, -100%) translate3d(50%, 0, 0);
+  }
+
+  40% {
+    transform: translate(-100%, -100%) translate3d(100%, 50%, 0);
+  }
+
+  60% {
+    transform: translate(-100%, -100%) translate3d(50%, 100%, 0);
+  }
+
+  80% {
+    transform: translate(-100%, -100%) translate3d(0, 50%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
+.download-button button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.24);
+  transform: translate(0, -4px);
+}
+
+
+
+
+.download-button button:hover .blob {
+  filter: brightness(1.5) blur(8px);
+}
+
+.download-button.short button .caption {
+  display: none; 
+}
+
+.download-button.short button {
+  padding: 10px; 
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .download-button {
+    margin-top: 3rem;
+    position: inherit;
+  }
+
+  .download-button.long button,
+  .download-button.short button {
+    padding: 10px 16px;
+  }
+
+  .download-button.short button .caption {
+    max-width: 200px;
+    opacity: 1;
+    display: flex;
+  }
+}

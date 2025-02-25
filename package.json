@@ -1,0 +1,33 @@
+{
+  "name": "epm-tools-next",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "export:html": "cross-env SINGLE_HTML_BUILD=true next build && node scripts/generateSingleHtml.js",
+    "build": "cross-env SINGLE_HTML_BUILD=false next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@sqlitecloud/drivers": "^1.0.289",
+    "moment-jalaali": "^0.10.1",
+    "next": "14.2.13",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-dropzone": "^14.2.3",
+    "react-icons": "^5.3.0",
+    "sharp": "^0.33.5",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.13",
+    "inline-source": "^8.0.3",
+    "inline-source-cli": "^2.0.0"
+  }
+}
