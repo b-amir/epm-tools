@@ -1,5 +1,6 @@
-![Overview](https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s1.png)
-
+<div align="center">
+  <img src="https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s1.png" alt="Overview">
+</div>
 
 ## Features
 
@@ -25,9 +26,13 @@
 - Drag and drop an Excel file (e.g., `Drop.xlsx`) into the designated area for analysis.
 - Use **Reset** to clear inputs or uploaded files.
 
-![Monthly Reports](https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s2.png)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s2.png" alt="Monthly Reports">
+</div>
 
-![Monthly Reports](https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s3.png)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s3.png" alt="Monthly Reports">
+</div>
 
 - Displays entries in Persian calendar format (e.g., `1403/11/01` for Bahman 1403).
 - Columns include:
@@ -43,7 +48,9 @@
 3. Days are highlighted in brackets (e.g., `[2] [3] ... [20]`).
 
 
-![Task Distribution](https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s4.png)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s4.png" alt="Task Distribution">
+</div>
 
 ---
 
@@ -51,7 +58,9 @@
 A fun little easter egg for users!
 Anyone can take a banana and add the global banana count by using the `/banana` route.
 
-![Take a banana](https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s5.png)
+<div align="center">
+  <img src="https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s5.png" alt="Take a banana">
+</div>
 
 ## Build Options
 
