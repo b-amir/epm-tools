@@ -1,9 +1,13 @@
+![Overview](https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s1.png)
+
+
 ## Features
 
 - **Time Duration Calculation**: Calculate work duration by specifying start/end times and break duration. Results are displayed in both `HH:MM` and decimal formats for flexibility.
 - **Monthly Report Generation**: Generate performance reports or upload existing `.xlsx` files for analysis.
 - **Performance Tracking**: View daily work hours in a table format with support for Persian calendar dates, multilingual labels, and rest time adjustments.
 - **Task Distribution Analysis**: Visualize task allocation across days, including total hours, distribution percentages, and day-span highlights.
+
 
 ---
 
@@ -14,24 +18,40 @@
 2. Add **Break Time** (e.g., `00:45` for 45 minutes).
 3. Click **Calculate Duration** to see results like `8:15` (hours:minutes) and `8.25` (decimal).
 
+
+
 ### 📊 Monthly Reports
 - Click **Generate Report** to create a new report.
 - Drag and drop an Excel file (e.g., `Drop.xlsx`) into the designated area for analysis.
 - Use **Reset** to clear inputs or uploaded files.
 
-### 📅 Performance Reports (Persian Support)
+![Monthly Reports](https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s2.png)
+
+![Monthly Reports](https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s3.png)
+
 - Displays entries in Persian calendar format (e.g., `1403/11/01` for Bahman 1403).
 - Columns include:
   - **مدت**: Duration in `HH:MM`.
   - **مدت اعشاری**: Decimal duration (e.g., `9.17` hours).
 - Dashes (`-`) indicate non-working or missing data.
 
+
+
 ### 📌 Task Distribution
 1. Enter **Duration (Hours)** (e.g., `88`) and **Distribution (%)** (e.g., `57`).
 2. Click **Get Distribution** to see task allocation across a **Span of Days** (e.g., `20` days).
 3. Days are highlighted in brackets (e.g., `[2] [3] ... [20]`).
 
+
+![Task Distribution](https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s4.png)
+
 ---
+
+### 🍌 Take a banana 
+A fun little easter egg for users!
+Anyone can take a banana and add the global banana count by using the `/banana` route.
+
+![Take a banana](https://raw.githubusercontent.com/b-amir/epm-tools/refs/heads/main/public/screenshots/epm-s5.png)
 
 ## Build Options
 
